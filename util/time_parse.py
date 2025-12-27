@@ -29,10 +29,6 @@ def parse_start_time(tokens: list[str]) -> datetime:
         if len(tokens) == 2:
             hour, minute = map(int, tokens[1].split(":"))
             return now.replace(hour=hour, minute=minute, second=0)
-        else:
-            return datetime.strptime(
-                " ".join(tokens[1:3]),
-                "%Y-%m-%d %H:%M"
-            )
+
 
     raise ValueError("Invalid time format")

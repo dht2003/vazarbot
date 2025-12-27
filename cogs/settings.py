@@ -7,7 +7,7 @@ class Settings(commands.Cog):
 
     @commands.command(name="prefix")
     @commands.has_permissions(administrator=True)
-    async def set_prefix(self, ctx, new_prefix: str):
+    async def set_prefix(self, ctx, new_prefix: str =  commands.parameter(description="New prefix for bot commands")):
         old = bot_config.prefix
         bot_config.prefix = new_prefix
         await ctx.send(f"✅ Prefix changed `{old}` → `{new_prefix}`")
@@ -19,6 +19,8 @@ class Settings(commands.Cog):
             f"Prefix: `{bot_config.prefix}`\n"
             f"API: `{bot_config.api_url}`"
         )
+
+
 
 async def setup(bot):
     await bot.add_cog(Settings(bot))

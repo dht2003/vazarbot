@@ -9,7 +9,7 @@ class Popup(commands.Cog):
         self.bot = bot
 
     @commands.command(name="popup")
-    async def popup(self, ctx, msg):
+    async def popup(self, ctx, msg : str = commands.parameter(description="Message you want to show in the popup")):
         logger.debug(f"{self.bot.user} sending popup msg: {msg}")
 
         payload = {
