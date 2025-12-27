@@ -6,7 +6,7 @@
 
 * **Notification:**
 
-![](media\notification.gif)
+![](https://github.com/dht2003/vazarbot/blob/main/media/notification.gif)
 
 ```
 !notification in 10m Standup
@@ -15,7 +15,7 @@
 
 * **doctor/paramedic**
 
-![](media\doctor.gif)
+![](https://github.com/dht2003/vazarbot/blob/main/media/doctor.gif)
 
 ```
 !paramedic 67 in 3s
@@ -25,7 +25,7 @@
 ```
 
 * **popup:**
-![](media\popup.gif)
+![](https://github.com/dht2003/vazarbot/blob/main/media/popup.gif)
 ```
 !popup "important msg"
 ```
